@@ -54,14 +54,8 @@ nav:
 
 1. Revise`README.md`; do replace all `start-code` with _target_
 2. Ensure parity of `pyproject.toml` with `mkdocs.yml`
-3. Add applicable classifiers
-4. Add `.vscode` to `.gitignore`
-5. Edit `/docs/index.md`, remove`/docs/gotchas.md`
-6.
-7. Run `poetry shell`
-8. Run `poetry update`
-9. Run `pytest`
-10. Review with `mkdocs serve`
+3. Edit `/docs/index.md`, remove`/docs/gotchas.md`
+4. Review docs `mkdocs serve`
 
 ## github
 

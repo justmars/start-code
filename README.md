@@ -2,22 +2,10 @@
 
 ![Github CI](https://github.com/justmars/start-code/actions/workflows/main.yml/badge.svg)
 
-## Documentation
+## Development
 
 See [documentation](https://justmars.github.io/start-code).
 
-## Development
-
-Checkout code, create a new virtual environment:
-
-```sh
-poetry add start-code # python -m pip install start-code
-poetry update # install dependencies
-poetry shell
-```
-
-Run tests:
-
-```sh
-pytest
-```
+1. Run `poetry shell`
+2. Run `poetry update`
+3. Run `pytest`
