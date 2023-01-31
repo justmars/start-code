@@ -29,6 +29,7 @@ mkdocs = "^1.4.2"
 mkdocstrings = { extras = ["python"], version = "^0.20.0" }
 mkdocs-material = "^9.0.9"
 rich = "^13.3"
+black = "^23.1a1"
 
 [tool.pytest]
 minversion = "7.2"

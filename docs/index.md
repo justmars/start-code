@@ -1,6 +1,9 @@
 # Boilerplate
 
-`git clone justmars/start_code` _target_
+```sh
+git clone https://github.com/justmars/start-code _target_ && code _target_
+# see also gh repo clone justmars/start-code _target_ && code _target_
+```
 
 ## python-version
 
