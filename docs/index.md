@@ -36,10 +36,14 @@ version = "0.0.1" # see tests/test_version
 
 ## mkdocs.yml
 
-```yml
+```yaml
 site_name: start_code Docs # match with pyproject.toml
 site_description: start_code description # match with pyproject.toml
 repo_url: https://github.com/justmars # change justmars to _target_
+...
+nav:
+  - Overview: index.md # adjust
+  - Gotchas: gotchas.md # remove
 ```
 
 ## pregit
