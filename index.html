@@ -441,6 +441,7 @@
 <li>The <em>target</em> will be included in <code>poetry build</code></li>
 <li>The sole <code>__init__.py</code> file in the root folder will have a single variable <code>__version__</code> equal to "0.0.1"</li>
 <li>The version should match the version found in <code>pyproject.toml</code></li>
+<li>Edit <code>/tests/test_version</code> by replacing <code>src</code></li>
 </ol>
 <h2 id="pyprojecttoml">pyproject.toml</h2>
 <div class="highlight"><span class="filename">TOML</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[tool.poetry]</span>
@@ -471,8 +472,8 @@
 <li>Ensure parity of <code>pyproject.toml</code> with <code>mkdocs.yml</code></li>
 <li>Add applicable classifiers</li>
 <li>Add <code>.vscode</code> to <code>.gitignore</code></li>
-<li>Edit <code>/docs/index.md</code>, remove<code>/docs/gotchas.md</code></li>
-<li>Edit <code>/tests/test_version</code> by replacing <code>src</code></li>
+<li>Edit <code>/docs/index.md</code>, remove<code>/docs/gotchas.md</code>
+6.</li>
 <li>Run <code>poetry shell</code></li>
 <li>Run <code>poetry update</code></li>
 <li>Run <code>pytest</code></li>
