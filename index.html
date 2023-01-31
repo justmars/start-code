@@ -471,8 +471,6 @@
 <li>Ensure parity of <code>pyproject.toml</code> with <code>mkdocs.yml</code></li>
 <li>Add applicable classifiers</li>
 <li>Add <code>.vscode</code> to <code>.gitignore</code></li>
-<li><a href="https://github.com/new">Create github repository</a></li>
-<li>Add github <code>repo_url</code> to <code>mkdocs.yml</code></li>
 <li>Edit <code>/docs/index.md</code>, remove<code>/docs/gotchas.md</code></li>
 <li>Edit <code>/tests/test_version</code> by replacing <code>src</code></li>
 <li>Run <code>poetry shell</code></li>
@@ -481,6 +479,30 @@
 <li>Review with <code>mkdocs serve</code></li>
 </ol>
 <h2 id="github">github</h2>
+<div class="admonition warning">
+<p class="admonition-title">Remember</p>
+<p><a class="md-button" href="https://github.com/new">Create Github Repository</a></p>
+<p>The created github repository URL <code>&lt;repo_url&gt;</code> must match:</p>
+<table>
+<thead>
+<tr>
+<th align="right">field</th>
+<th align="left">file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>repo_url</code></td>
+<td align="left"><code>mkdocs.yml</code></td>
+</tr>
+<tr>
+<td align="right"><code>repository</code></td>
+<td align="left"><code>pyproject.toml</code></td>
+</tr>
+</tbody>
+</table>
+<p>Review the files above.</p>
+</div>
 <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>.git<span class="w"> </span><span class="c1"># remove cloned .git file</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>init<span class="w"> </span>-b<span class="w"> </span>main
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>git<span class="w"> </span>add<span class="w"> </span>.
