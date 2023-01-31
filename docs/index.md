@@ -55,16 +55,27 @@ nav:
 2. Ensure parity of `pyproject.toml` with `mkdocs.yml`
 3. Add applicable classifiers
 4. Add `.vscode` to `.gitignore`
-5. [Create github repository](https://github.com/new)
-6. Add github `repo_url` to `mkdocs.yml`
-7. Edit `/docs/index.md`, remove`/docs/gotchas.md`
-8. Edit `/tests/test_version` by replacing `src`
-9. Run `poetry shell`
-10. Run `poetry update`
-11. Run `pytest`
-12. Review with `mkdocs serve`
+5. Edit `/docs/index.md`, remove`/docs/gotchas.md`
+6. Edit `/tests/test_version` by replacing `src`
+7. Run `poetry shell`
+8. Run `poetry update`
+9. Run `pytest`
+10. Review with `mkdocs serve`
 
 ## github
+
+!!! warning "Remember"
+
+    [Create Github Repository](https://github.com/new){ .md-button }
+
+    The created github repository URL `<repo_url>` must match:
+
+    field | file
+    --:|:--
+    `repo_url` | `mkdocs.yml`
+    `repository` | `pyproject.toml`
+
+    Review the files above.
 
 ```sh
 rm -rf .git # remove cloned .git file
