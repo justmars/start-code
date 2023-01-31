@@ -19,6 +19,7 @@ Check `.python-version`, default is 3.11.1
 2. The _target_ will be included in `poetry build`
 3. The sole `__init__.py` file in the root folder will have a single variable `__version__` equal to "0.0.1"
 4. The version should match the version found in `pyproject.toml`
+5. Edit `/tests/test_version` by replacing `src`
 
 ## pyproject.toml
 
@@ -56,7 +57,7 @@ nav:
 3. Add applicable classifiers
 4. Add `.vscode` to `.gitignore`
 5. Edit `/docs/index.md`, remove`/docs/gotchas.md`
-6. Edit `/tests/test_version` by replacing `src`
+6.
 7. Run `poetry shell`
 8. Run `poetry update`
 9. Run `pytest`
