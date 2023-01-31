@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "start-code"
-version = "0.0.1"
+name = "src"
 description = "Boilerplate Python Code"
+version = "0.0.1"
 authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
 readme = "README.md"
 license = "MIT"
@@ -34,6 +34,9 @@ rich = "^13.3"
 minversion = "7.2"
 addopts = "-ra -q --cov=start_code tests/"
 testpaths = ["tests"]
+
+[tool.ruff]
+ignore = ["F401"]
 
 [tool.curlylint.rules]
 image_alt = true

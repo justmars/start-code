@@ -20,6 +20,7 @@ theme:
         name: Switch to light mode
 nav:
   - Overview: index.md
+  - Gotchas: gotchas.md
 
 extra:
   social:
