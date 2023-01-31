@@ -44,7 +44,7 @@ repo_url: https://github.com/justmars # change justmars to _target_
 
 ## pregit
 
-1. Revise README.md
+1. Revise`README.md`; do replace all `start-code` with _target_
 2. Ensure parity of `pyproject.toml` with `mkdocs.yml`
 3. Add applicable classifiers
 4. Add `.vscode` to `.gitignore`
