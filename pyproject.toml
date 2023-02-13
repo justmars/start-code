@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "src"
-description = "Boilerplate Python Code, Jan. 2023"
-version = "0.0.1"
+description = "Boilerplate Python Code, Feb. 2023"
+version = "0.0.2"
 authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
 readme = "README.md"
 license = "MIT"
 homepage = "https://mv3.dev"
 repository = "https://github.com/justmars/start-code"
-documentation = "https://justmars.github.io/start-code"
+documentation = "https://mv3.dev/start-code"
 classifiers = [
   "Programming Language :: Python :: 3.11",
   "Typing :: Typed",
