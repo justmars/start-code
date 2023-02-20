@@ -7,7 +7,7 @@ git clone https://github.com/justmars/start-code _target_ && code _target_
 
 ## python-version
 
-Check `.python-version`, default is 3.11.1
+Check `.python-version`, default is 3.11.2
 
 !!! warning
 
