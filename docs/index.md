@@ -15,11 +15,11 @@ Check `.python-version`, default is 3.11.2
 
 ## app
 
-1. Rename the root `/src` folder to _target_ or delete
+1. Rename the root `/mv3` folder to _target_ or delete
 2. The _target_ will be included in `poetry build`
 3. The sole `__init__.py` file in the root folder will have a single variable `__version__` equal to "0.0.1"
 4. The version should match the version found in `pyproject.toml`
-5. Edit `/tests/test_version` by replacing `src`
+5. Edit `/tests/test_version` by replacing `mv3`
 
 ## pyproject.toml
 

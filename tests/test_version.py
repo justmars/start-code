@@ -1,11 +1,11 @@
 import pathlib
 import tomllib
 
-import src
+import mv3
 
 
 def test_version():
     path = pathlib.Path("pyproject.toml")
     data = tomllib.loads(path.read_text())
     version = data["tool"]["poetry"]["version"]
-    assert version == src.__version__
+    assert version == mv3.__version__

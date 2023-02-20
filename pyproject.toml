@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "src"
+name = "mv3"
 description = "Boilerplate Python Code, Feb. 2023"
 version = "0.0.1"
 authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
