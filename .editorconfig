@@ -12,3 +12,7 @@ insert_final_newline = true
 
 [*.py]
 indent_size = 4
+
+[*.{css,html,js,json,sass,scss,vue,yaml,yml}]
+indent_style = space
+indent_size = 2

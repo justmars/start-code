@@ -1,10 +1,12 @@
-site_name: start_code Docs
-site_description: start_code description
+site_name: start-code Docs
+site_description: Simple Python boilerate
 site_url: https://mv3.dev
 site_author: Marcelino Veloso III
-repo_url: https://github.com/justmars
+repo_url: https://github.com/justmars/start-python
 theme:
   name: "material"
+  features:
+    - content.tabs.link
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -19,9 +21,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 nav:
-  - Overview: index.md
-  - Gotchas: gotchas.md
-
+  - index.md
 extra:
   homepage: https://mv3.dev
   social:
@@ -32,9 +32,7 @@ extra:
       link: https://esq.social/@mv
       name: mv on Mastodon
 copyright: Copyright &copy; Marcelino Veloso III
-
 plugins:
-  - autorefs
   - mkdocstrings:
       handlers:
         python:
@@ -42,19 +40,31 @@ plugins:
             show_root_toc_entry: false
             show_category_heading: true
             show_source: true
-            heading_level: 4
+            heading_level: 3
   - search:
       lang: en
 markdown_extensions:
   - attr_list
   - md_in_html
   - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true

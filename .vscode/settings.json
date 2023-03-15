@@ -1,22 +1,50 @@
 {
   "editor.fontLigatures": true,
-  "python.formatting.provider": "none",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "python.testing.pytestArgs": [
+      //"--ds=config.settings", see pytest django
+      "--exitfirst",
+      "--verbose"
+    ],
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.codeActionsOnSave": {
+          "source.fixAll": true,
+          "source.organizeImports.ruff": true
+      },
   },
   "yaml.schemas": {
-    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+      "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
   },
   "yaml.customTags": [
-    "!ENV scalar",
-    "!ENV sequence",
-    "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
-    "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
-    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+      "!ENV scalar",
+      "!ENV sequence",
+      "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+      "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+      "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
   ],
   "markdownlint.config": {
-    "MD046": false,
-    "MD052": false,
-  }
+      "MD046": false,
+      "MD034": false,
+      "MD052": false,
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "files.associations": {
+      "**/*.html": "jinja-html",
+      "**/*.sql": "jinja-sql",
+      "**/*.pgsql": "jinja-sql",
+      "*.css": "tailwindcss"
+  },
+      "tailwindCSS.includeLanguages": {
+      "plaintext": "html",
+      "jinja-html": "html"
+  },
+      "emmet.includeLanguages": {
+      "jinja-html": "html"
+  },
 }
