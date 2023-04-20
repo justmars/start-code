@@ -4,7 +4,7 @@
     "strings": true
   },
   "python.testing.pytestArgs": [
-      //"--ds=config.settings", see pytest django
+      "--ds=config.settings", // see pytest django
       "--exitfirst",
       "--verbose"
     ],
@@ -16,6 +16,10 @@
           "source.organizeImports.ruff": true
       },
   },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+},
   "yaml.schemas": {
       "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
   },
@@ -24,15 +28,13 @@
       "!ENV sequence",
       "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
       "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
-      "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+      "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
   ],
   "markdownlint.config": {
-      "MD046": false,
-      "MD034": false,
-      "MD052": false,
-  },
-  "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "MD024": false,
+    "MD034": false,
+    "MD046": false,
+    "MD052": false,
   },
   "files.associations": {
       "**/*.html": "jinja-html",
