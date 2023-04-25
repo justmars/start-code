@@ -1,12 +1,14 @@
 site_name: start-code Docs
-site_description: Simple Python boilerate
+site_description: Boilerplate python
 site_url: https://mv3.dev
 site_author: Marcelino Veloso III
-repo_url: https://github.com/justmars/start-python
+repo_url: https://github.com/justmars/start-django
+dev_addr: '127.0.0.1:8001'
 theme:
   name: "material"
   features:
     - content.tabs.link
+    - content.code.annotate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -56,6 +58,8 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       auto_title: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:

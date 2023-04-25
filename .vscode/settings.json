@@ -1,10 +1,9 @@
 {
   "editor.fontLigatures": true,
   "editor.quickSuggestions": {
-    "strings": true
+    "strings": true // tailwindcss
   },
   "python.testing.pytestArgs": [
-      "--ds=config.settings", // see pytest django
       "--exitfirst",
       "--verbose"
     ],

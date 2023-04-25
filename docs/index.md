@@ -1,42 +1,48 @@
+---
+hide:
+- navigation
+- toc
+---
 # Boilerplate
 
-```sh
-git clone https://github.com/justmars/start-code _target_ && code _target_
-# see also gh repo clone justmars/start-code _target_ && code _target_
+```{ .sh .copy title="Rename t" }
+gh repo clone justmars/start-code t \
+  && cd t \
+  && just start # 3.11.3 (1)
 ```
 
-## python-version
+1. Check `.python-version`
 
-Check `.python-version`, default is 3.11.2
+    !!! warning
 
-!!! warning
-
-    Run `poetry env use $(pyenv which python)` if `.python-version` has been updated. Review created .venv folder's `pyvenv.cfg` this should show the version declared in `.python-version`
+        Review created .venv folder's `pyvenv.cfg` this should show the version declared in `.python-version`
 
 ## app
 
-1. Rename the root `/mv3` folder to _target_ or delete
+1. Rename the root `/src` folder to _target_ or delete
 2. The _target_ will be included in `poetry build`
 3. The sole `__init__.py` file in the root folder will have a single variable `__version__` equal to "0.0.1"
 4. The version should match the version found in `pyproject.toml`
-5. Edit `/tests/test_version` by replacing `mv3`
+5. Edit `/tests/test_version` by replacing `src`
 
 ## pyproject.toml
 
 ```toml
 [tool.poetry]
-name = "src" # _target_
+name = "src" # _t_ (1)
 description = "Boilerplate Python Code"
 version = "0.0.1" # see tests/test_version
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^0.21"
+
+[tool.poetry.group.dev.dependencies] # (2)
+...
 ```
 
-!!! warning
-
-    If publishing to pypi, ensure `name` doesn't exist yet.
-
-!!! note
-
-    Remove dependencies that aren't applicable.
+1. If publishing to pypi, ensure `name` doesn't exist yet.
+2. Remove dependencies that aren't applicable.
 
 ## mkdocs.yml
 
