@@ -36,6 +36,10 @@
     "MD052": false,
   },
   "files.associations": {
+      "**/env.example": "dotenv", // handles 1password templates
+      "**/env.example.*": "dotenv", // handles 1password templates
+      "**/compose.*.tpl": "yaml", // handles 1password templates
+      "**/env.*.tpl": "dotenv", // handles 1password templates
       "**/*.html": "jinja-html",
       "**/*.sql": "jinja-sql",
       "**/*.pgsql": "jinja-sql",

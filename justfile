@@ -20,9 +20,10 @@ pre:
 docs:
   mkdocs serve
 
-# git push
-push msg:
-  rm -f compose.yml
-  git add .
-  git commit -m 'feat: {{msg}}'
-  git push
+# create .env file from example
+dumpenv:
+  op inject -i env.example -o .env
+
+# update /src requirements.txt
+req:
+  poetry export -f requirements.txt --without-hashes --output src/requirements.txt

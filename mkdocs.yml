@@ -1,8 +1,8 @@
-site_name: start-code Docs
-site_description: Boilerplate python
+site_name: start-code
+site_description: Python Boilerplate
 site_url: https://mv3.dev
 site_author: Marcelino Veloso III
-repo_url: https://github.com/justmars/start-django
+repo_url: https://github.com/justmars/start-code
 dev_addr: '127.0.0.1:8001'
 theme:
   name: "material"
@@ -23,7 +23,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 nav:
-  - index.md
+  - Overview: index.md
 extra:
   homepage: https://mv3.dev
   social:
@@ -46,6 +46,7 @@ plugins:
   - search:
       lang: en
 markdown_extensions:
+  - footnotes
   - attr_list
   - md_in_html
   - admonition

@@ -1,6 +1,12 @@
 .DS_Store
 .ruff_cache
 poetry.lock
+*.sqlite
+*.db
+*.db-shm
+*.db-wal
+*.rdb
+.env.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
