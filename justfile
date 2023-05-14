@@ -12,9 +12,9 @@ tw_install:
     @tailwindcss/container-queries
 
 # prepare to commit
-pre:
+prep:
   pre-commit run --all-files
-  cd src && pytest
+  pytest
 
 # serve docs
 docs:

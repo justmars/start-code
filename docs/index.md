@@ -53,7 +53,6 @@ repo_url: https://github.com/justmars # change justmars to _target_
 ...
 nav:
   - Overview: index.md # adjust
-  - Gotchas: gotchas.md # remove
 ```
 
 ## pregit

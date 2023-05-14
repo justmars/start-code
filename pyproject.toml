@@ -31,7 +31,7 @@ mkdocs-material = "^9.1"
 
 [tool.pytest.ini_options]
 minversion = "7.3"
-addopts = "-ra -q --doctest-modules --cov"
+addopts = "-ra -q --cov"
 filterwarnings = [
   "ignore::DeprecationWarning", # DeprecationWarning: pkg_resources is deprecated as an API
 ]
@@ -41,24 +41,6 @@ testpaths = ["tests"]
 ignore = ["F401", "F403"]
 fixable = ["F", "E", "W", "I001"]
 select = ["F", "E", "W", "I001"]
-
-[tool.black]
-target-version = ['py311']
-line-length = 79
-include = '.pyi?$'
-exclude = '''
-/(
-    .git
-    | .hg
-    | .mypy_cache
-    | .tox
-    | .venv
-    | _build
-    | buck-out
-    | build
-    | dist
-)/
-'''
 
 [build-system]
 requires = ["poetry-core"]
