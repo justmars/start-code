@@ -28,10 +28,10 @@ mkdocstrings = { extras = ["python"], version = "^0.22.0" }
 mkdocs-material = "^9.1"
 
 [tool.pytest.ini_options]
-minversion = "7.3"
+minversion = "7.4"
 addopts = "-ra -q --cov"
 # filterwarnings = ["ignore::DeprecationWarning"] see pkg_resources
-testpaths = ["tests"]
+testpaths = ["tests", "src"]
 
 [tool.ruff]
 ignore = ["F401", "F403"]
