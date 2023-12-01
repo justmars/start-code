@@ -34,8 +34,8 @@ description = "Boilerplate Python Code"
 version = "0.0.1" # see tests/test_version
 
 [tool.poetry.dependencies]
-python = "^3.11"
-python-dotenv = "^0.21"
+python = "^3.12"
+python-dotenv = "^1.0"
 
 [tool.poetry.group.dev.dependencies] # (2)
 ...

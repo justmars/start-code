@@ -1,15 +1,3 @@
-# build step tailwindcss
-tw:
-  npx tailwindcss -i ./src/static/css/input.css \
-    -o ./src/static/css/output.css --watch
-
-# install tailwindcss and plugins
-tw_install:
-  npm install -D tailwindcss \
-    @tailwindcss/typography \
-    @tailwindcss/forms \
-    @tailwindcss/aspect-ratio \
-    @tailwindcss/container-queries
 
 # prepare to commit
 prep:
