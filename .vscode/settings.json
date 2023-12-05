@@ -7,10 +7,19 @@
     "--exitfirst",
     "--verbose"
   ],
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  }, // see https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
   "[python]": {
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
     "editor.defaultFormatter": "charliermarsh.ruff"
-  },
+  }, // see https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",

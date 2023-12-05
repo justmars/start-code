@@ -2,7 +2,7 @@
 name = "mv3"
 description = "Boilerplate Python Code"
 version = "0.0.1"
-authors = ["Marcelino G. Veloso III <contact@mv3.dev>"]
+authors = ["Marcelino G. Veloso III <hi@mv3.dev>"]
 readme = "README.md"
 homepage = "https://mv3.dev"
 repository = "https://github.com/justmars/start-code"
@@ -33,6 +33,7 @@ addopts = "-ra -q --cov"
 testpaths = ["tests", "src"]
 
 [tool.ruff]
+line-length = 120
 ignore = ["F401", "F403"]
 fixable = ["F", "E", "W", "I001"]
 select = ["F", "E", "W", "I001"]
