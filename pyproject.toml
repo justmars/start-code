@@ -1,43 +1,35 @@
-[tool.poetry]
-name = "mv3"
-description = "Boilerplate Python Code"
+[project]
+name = "start-code"
 version = "0.0.1"
-authors = ["Marcelino G. Veloso III <hi@mv3.dev>"]
+authors = [
+  {name="Marcelino Veloso III", email="hi@mv3.dev" }
+]
+description = "Boilerplate Python Code."
 readme = "README.md"
-homepage = "https://mv3.dev"
-repository = "https://github.com/justmars/start-code"
-documentation = "https://justmars.github.io/start-code"
-classifiers = [
-  "Programming Language :: Python :: 3.12",
-  "Typing :: Typed",
-  "Development Status :: 4 - Beta",
-  "Framework :: Pytest",
+requires-python = ">=3.11"
+dependencies = [
+  "environs >= 10.3.0",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-python-dotenv = "^1.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4"
-pytest-cov = "^4.1"
-pre-commit = "^3.5"
-mkdocs = "^1.4.3"
-mkdocstrings = { extras = ["python"], version = "^0.22.0" }
-mkdocs-material = "^9.1"
+[project.optional-dependencies]
+dev = [
+  "rich >= 13.7",
+  "mkdocs >= 1.5",
+  "pytest >= 8.0",
+  "pytest-cov >= 4.1",
+  "mkdocstrings [python] >= 0.22.0",
+  "mkdocs-material >= 9.4",
+  "build >= 1.0.3",
+  "twine >= 4.0.2",
+]
 
 [tool.pytest.ini_options]
 minversion = "7.4"
-addopts = "-ra -q --cov"
+addopts = "-ra -q -vv --cov --doctest-modules"
 # filterwarnings = ["ignore::DeprecationWarning"] see pkg_resources
 testpaths = ["tests", "src"]
 
 [tool.ruff]
-line-length = 120
 ignore = ["F401", "F403"]
 fixable = ["F", "E", "W", "I001"]
 select = ["F", "E", "W", "I001"]
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

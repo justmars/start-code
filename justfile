@@ -1,17 +1,20 @@
+set dotenv-load
 
-# prepare to commit
-prep:
-  pre-commit run --all-files
-  pytest
-
-# serve docs
-docs:
-  mkdocs serve
+# create .venv
+start:
+  python -m venv .venv && \
+  source .venv/bin/activate && \
+  python -m pip install -U pip && \
+  python -m pip install -U \
+    --editable '.[dev]' \
+    --require-virtualenv \
+    --verbose
 
 # create .env file from example
 dumpenv:
   op inject -i env.example -o .env
 
-# update /src requirements.txt
-req:
-  poetry export -f requirements.txt --without-hashes --output src/requirements.txt
+# upload to pypi
+publish:
+  python -m build && \
+  python -m twine upload dist/* -u __token__ -p $PYPI_TOKEN

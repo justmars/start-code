@@ -28,16 +28,16 @@ gh repo clone justmars/start-code t \
 ## pyproject.toml
 
 ```toml
-[tool.poetry]
+[project]
 name = "src" # _t_ (1)
 description = "Boilerplate Python Code"
 version = "0.0.1" # see tests/test_version
 
-[tool.poetry.dependencies]
-python = "^3.12"
-python-dotenv = "^1.0"
+dependencies = [
+  "environs >= 10.3.0",
+]
 
-[tool.poetry.group.dev.dependencies] # (2)
+[project.optional-dependencies] # (2)
 ...
 ```
 
