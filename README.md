@@ -1,6 +1,6 @@
 # start-code
 
-![Github CI](https://github.com/justmars/start-code/actions/workflows/main.yml/badge.svg)
+![Github CI](https://github.com/justmars/start-code/actions/workflows/ci.yml/badge.svg)
 
 Minimal boilerplate:
 
