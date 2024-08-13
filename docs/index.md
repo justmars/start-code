@@ -8,7 +8,7 @@ hide:
 ```{ .sh .copy title="Rename t" }
 gh repo clone justmars/start-code t \
   && cd t \
-  && just start # 3.11.3 (1)
+  && just start # 3.12.5 (1)
 ```
 
 1. Check `.python-version`
