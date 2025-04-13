@@ -8,22 +8,20 @@ hide:
 ```{ .sh .copy title="Rename t" }
 gh repo clone justmars/start-code t \
   && cd t \
-  && just start # 3.12.5 (1)
+  && just start # 3.13.3 (1)
 ```
 
-1. Check `.python-version`
+1. Check version
 
     !!! warning
 
-        Review created .venv folder's `pyvenv.cfg` this should show the version declared in `.python-version`
+        At present, it's `3.13.3` as specified under `pyproject.toml`
 
 ## app
 
-1. Rename the root `/src` folder to _target_ or delete
-2. The _target_ will be included in `poetry build`
-3. The sole `__init__.py` file in the root folder will have a single variable `__version__` equal to "0.0.1"
-4. The version should match the version found in `pyproject.toml`
-5. Edit `/tests/test_version` by replacing `src`
+1. Choose to either delete or rename the root `/src/start_code` folder to _desired target name_. If it's deleted, edit `/tests/test_version` by replacing `src`
+2. The sole `__init__.py` file in the `/src` folder will have a single variable `__version__` equal to "0.0.1"
+3. The version should match the version found in `pyproject.toml`
 
 ## pyproject.toml
 
@@ -33,11 +31,9 @@ name = "src" # _t_ (1)
 description = "Boilerplate Python Code"
 version = "0.0.1" # see tests/test_version
 
-dependencies = [
-  "environs >= 10.3.0",
+dependencies = [ # (2)
+  "environs >= 14.1",
 ]
-
-[project.optional-dependencies] # (2)
 ...
 ```
 

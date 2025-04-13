@@ -2,13 +2,8 @@ set dotenv-load
 
 # create .venv
 start:
-  python -m venv .venv && \
-  source .venv/bin/activate && \
-  python -m pip install -U pip && \
-  python -m pip install -U \
-    --editable '.[dev]' \
-    --require-virtualenv \
-    --verbose
+  uv sync --all-extras && \
+  source .venv/bin/activate
 
 # create .env file from example
 dumpenv:
