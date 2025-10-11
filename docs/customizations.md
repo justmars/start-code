@@ -1,10 +1,19 @@
 # Customizations
 
+## clear notebooks
+
+```yml
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout
+```
+
 ## django precommit
 
 ```yml
   - repo: https://github.com/rtts/djhtml
-    rev: 3.0.6
+    rev: 3.0.10
     hooks:
       - id: djhtml
         args: ["--tabwidth", "2"]
@@ -24,7 +33,5 @@ tw:
 tw_install:
   npm install -D tailwindcss \
     @tailwindcss/typography \
-    @tailwindcss/forms \
-    @tailwindcss/aspect-ratio \
-    @tailwindcss/container-queries
+    @tailwindcss/forms
 ```

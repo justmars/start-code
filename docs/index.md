@@ -8,14 +8,14 @@ hide:
 ```{ .sh .copy title="Rename t" }
 gh repo clone justmars/start-code t \
   && cd t \
-  && just start # 3.13.3 (1)
+  && just start # 3.14 (1)
 ```
 
 1. Check version
 
     !!! warning
 
-        At present, it's `3.13.3` as specified under `pyproject.toml`
+        At present, it's `3.14` as specified under `pyproject.toml`
 
 ## app
 
@@ -78,7 +78,7 @@ rm -rf .git # remove cloned .git file
 git init -b main
 git add .
 pre-commit autoupdate
-pre-commit run --all-files
+pre-commit install
 git commit -m "setup"
 git remote add origin <repo_url>
 git push -u origin main

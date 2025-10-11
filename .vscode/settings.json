@@ -7,9 +7,18 @@
   "[python]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
+      "source.fixAll": "always",
+      "source.fixAll.ruff": "always",
       "source.organizeImports.ruff": "explicit"
-    },
+    }
+  },
+  "[jupyter]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.fixAll.ruff": "always",
+      "source.organizeImports.ruff": "explicit"
+    }
   },
   "[javascript]": {
     "editor.formatOnSave": true,
@@ -18,12 +27,6 @@
   "yaml.schemas": {
     "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
   },
-  "yaml.customTags": [
-    // see mkdocs.yml
-    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
-    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
-    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
-  ],
   "markdownlint.config": {
     "MD024": false,
     "MD034": false,
