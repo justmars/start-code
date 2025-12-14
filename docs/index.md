@@ -1,7 +1,5 @@
 ---
-hide:
-- navigation
-- toc
+icon: lucide/rocket
 ---
 # Boilerplate
 
@@ -32,7 +30,7 @@ description = "Boilerplate Python Code"
 version = "0.0.1" # see tests/test_version
 
 dependencies = [ # (2)
-  "environs >= 14.1",
+  "environs >= 14.3",
 ]
 ...
 ```
@@ -40,23 +38,12 @@ dependencies = [ # (2)
 1. If publishing to pypi, ensure `name` doesn't exist yet.
 2. Remove dependencies that aren't applicable.
 
-## mkdocs.yml
-
-```yaml
-site_name: start_code Docs # match with pyproject.toml
-site_description: start_code description # match with pyproject.toml
-repo_url: https://github.com/justmars # change justmars to _target_
-...
-nav:
-  - Overview: index.md # adjust
-```
-
 ## pregit
 
 1. Revise`README.md`; do replace all `start-code` with _target_
-2. Ensure parity of `pyproject.toml` with `mkdocs.yml`
-3. Edit `/docs/index.md`, remove`/docs/gotchas.md`
-4. Review docs `mkdocs serve`
+2. Ensure parity of `pyproject.toml` with `zensical.yml`
+3. Edit `/docs/index.md`
+4. Review docs `zensical serve`
 
 ## github
 
